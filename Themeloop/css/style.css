@@ -1,0 +1,330 @@
+/**
+*
+* ---------------------------------------------------------------------------
+*
+* Template :    Theme Full Name
+* Author :      Themeloop
+* Author URI :  http://themeloop.co.nf
+* Version :     1.0
+*
+* --------------------------------------------------------------------------- 
+*
+*/
+
+
+/*
+-----------------------------------------
+1    Basic Style
+2    Bootstrap Customization 
+3    Thurd Party PLugin             
+4    Responsive Styles
+-----------------------------------------
+*/
+
+
+/*
+-----------------------------------------
+1.   Basic Style
+-----------------------------------------
+*/
+
+
+body {
+  vertical-align: baseline;
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.42857143;
+  color: #000000;
+}
+
+a {
+  color: #000000;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a, a:hover, a:focus, .btn:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+::selection {
+  background-color: #cccccc;
+}
+
+::-moz-selection {
+  background-color: #cccccc;
+}
+
+img::selection {
+  background-color: #cccccc;
+}
+
+img::-moz-selection {
+  background-color: #cccccc;
+}
+
+/*
+-----------------------------------------
+2.   Bootstrap Customization
+-----------------------------------------
+*/
+
+
+/******   List Item   ******/
+
+/*.list-inline {
+  margin-left: 0;
+}*/
+
+/******   Typography   ******/
+
+/*h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin: 0;
+  color: #000;
+  font-family: sans-serif;
+}
+
+p {
+  color: #000;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+
+.small, small {
+  font-size: 90%;
+}
+
+mark, .mark {
+  background-color: #cccccc;
+}*/
+
+/******   Label   ******/
+
+/*.label {
+  border-radius: 0;
+  font-weight: normal;
+  background-color: #f0f0f0;
+  color: #000000;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}*/
+
+/******   Button   ******/
+
+/*.btn {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  border-radius: 0;
+  color: #ccc;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-left: 5px solid #ccc;
+  border-right: 5px solid #ccc; 
+  -webkit-transition: background-color 0.5s ease-out 0s, color 0.5s ease-out 0s;
+  -moz-transition: background-color 0.5s ease-out 0s, color 0.5s ease-out 0s;
+  -ms-transition: background-color 0.5s ease-out 0s, color 0.5s ease-out 0s;
+  -o-transition: background-color 0.5s ease-out 0s, color 0.5s ease-out 0s;
+  transition: background-color 0.5s ease-out 0s, color 0.5s ease-out 0s;
+}
+
+.btn:hover {
+  background-color: #ccc;
+  color: #ffffff;
+}*/
+
+
+
+/*
+-----------------------------------------
+2.   Third Party Plugin Custom Setup
+-----------------------------------------
+*/
+
+
+/******   Owl Carousel   ******/
+
+.owl-theme .owl-nav [class*=owl-] {
+  border-radius: 0;
+  margin: 0;
+  padding: 4px 10px;
+}
+
+.owl-theme .owl-nav {
+  position: absolute;
+  top: -60px;
+  right: 0;
+}
+
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 8px;
+  margin:  4px;
+  background-color: #d7d7d7;
+  height: 20px;
+  border-radius: 0;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #232323;
+  height: 25px;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #232323;
+}
+
+
+
+/******   Preloader   ******/
+
+#preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 55;
+}
+
+.preloader-plane {
+  margin:-26px 0 0 -26px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+          animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+
+@-webkit-keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+@keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******   Google Map   ******/
+
+/*#map {
+  border: 20px solid #f9f9f9;
+  width: 80%;
+  height: 280px; 
+  margin: 88px auto 80px; 
+  -webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  -moz-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  -ms-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  -o-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#map:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  -ms-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  -o-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.info-window {
+  font-family: 'Lato', sans-serif;
+}
+
+.info-window h5 {
+  font-size: 12px;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.info-content p {  
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  word-spacing: 1px;
+}*/
+
+
+
+/*
+-----------------------------------------
+10.   Responsive Styles
+-----------------------------------------
+*/
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+/******   Small Desktop   ******/
+
+
+
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+/******   Tablet Design for a width of 768px   ******/
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+/******   Mobile Design for a width of 320px   ******/
+
+  
+
+}
+
+
+/*----------------------------------------------------------------------------*/
+
