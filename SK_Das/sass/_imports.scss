@@ -1,0 +1,55 @@
+//SASS VARIALES AND MIXINS
+$primary: #004a80;
+
+
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//MEDIA QUERY MANAGER
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 36em) {
+            @content
+        }
+        ; //576px
+    }
+
+    @if $breakpoint==tab-port {
+        @media (max-width: 48em) {
+            @content
+        }
+        ; //768px
+    }
+
+    @if $breakpoint==tab-land {
+        @media (max-width: 62em) {
+            @content
+        }
+        ; //992px
+    }
+
+    @if $breakpoint==mid-desk {
+        @media (max-width: 75em) {
+            @content
+        }
+        ; //1200px
+    }
+    
+    @if $breakpoint==large-desk {
+        @media (min-width: 125em) {
+            @content
+        }
+        ; //2000px
+    }
+}
